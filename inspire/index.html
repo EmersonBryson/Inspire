@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/style/main.css">
+    <title>Inspire</title>
+</head>
+
+<body id="backgroundImage">
+    <header class="container-fluid ml-auto">
+        <div class="d-block row text-light mr-5 mt-2 float-right" id="weather">
+
+        </div>
+    </header>
+    <main class="container-fluid">
+
+        <div class="row justify-content-center align-items-center text-center hub">
+            <div class="col" id="clock">
+                <h1 class="display-1 text-light my-5" id="time">
+                </h1>
+                <div class="col text-light" id="greeting">
+                    <h1 class="display-3 fancyfont">Greetings!</h1>
+                    <h2 class="fancyfont"> How Will We Conquer the World Today?</h2>
+                </div>
+            </div>
+        </div>
+        <div class="d-block row float-right">
+            <div class="col-4 mt-5">
+                <div class="card" style="width: 20rem;background-color: rgba(0, 0, 0, 0.315);opacity: .6">
+                    <div class="card-body">
+                        <h5 class="card-title text-light fancyfont">To Do List</h5>
+                        <div class="row flex-column">
+                            <div class="form-check" id="todo">
+
+                            </div>
+                        </div>
+                        <form onsubmit="app.todoController.addTodo()" class="form-inline">
+                            <div class="form-group">
+                                <label for=""></label>
+                                <input type="text" name="" id="name" class="form-control"
+                                    placeholder="Add something to do" aria-describedby="helpId">
+                            </div><button type="submit" class="btn btn-outline-light">Add Todo</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="app"></div>
+    </main>
+    <footer class="container-fluid bg-transparent text-light">
+        <div class="row text-center">
+
+            <div class="col fancyfont" id="quote">
+
+
+            </div>
+    </footer>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
